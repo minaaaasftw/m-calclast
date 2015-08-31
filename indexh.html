@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html ng-app="Calculator">
+<head>
+    <title>Calculator</title>
+
+</head>
+<body>
+<div ng-controller="CalculatorController">
+    <input type="text" ng-change="onChangeValue()" ng-model="displayValue">
+    <div>{{result}}</div>
+    <button class="btn" type="button" ng-click="Clear()">C</button>
+    <button class="btn" type="button" ng-click="Sum()">+</button>
+    <button class="btn" type="button" ng-click="Subtract()">-</button>
+    <button class="btn" type="button" ng-click="Multiply()">*</button>
+    <button class="btn" type="button" ng-click="Divide()">/</button>
+    <button class="btn" type="button" ng-click="Calculate()">=</button>
+</div>
+
+<!-- Dependencies -->
+<script type="text/javascript" src="js/angular.js"></script>
+
+<!-- App -->
+<script type="text/javascript" src="js/Calculator.js"></script>
+
+</body>
+</html>
